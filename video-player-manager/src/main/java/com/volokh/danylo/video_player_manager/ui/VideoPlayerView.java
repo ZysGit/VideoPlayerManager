@@ -551,10 +551,12 @@ public class VideoPlayerView extends ScalableTextureView
     public void onSurfaceTextureAvailable(SurfaceTexture surfaceTexture, int width, int height) {
         if (SHOW_LOGS)
             Logger.v(TAG, "onSurfaceTextureAvailable, width " + width + ", height " + height + ", this " + this);
+
+        notifyTextureAvailable();
+
         if (mLocalSurfaceTextureListener != null) {
             mLocalSurfaceTextureListener.onSurfaceTextureAvailable(surfaceTexture, width, height);
         }
-        notifyTextureAvailable();
     }
 
     private void notifyTextureAvailable() {

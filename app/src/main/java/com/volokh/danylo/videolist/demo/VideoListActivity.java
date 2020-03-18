@@ -1,7 +1,7 @@
 package com.volokh.danylo.videolist.demo;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,7 +17,7 @@ import com.volokh.danylo.videolist.visibility_demo.fragments.VisibilityUtilsFrag
  * 1. {@link VideoRecyclerViewFragment}
  * 2. {@link VideoListFragment}
  */
-public class VideoListActivity extends ActionBarActivity implements VisibilityUtilsFragment.VisibilityUtilsCallback {
+public class VideoListActivity extends AppCompatActivity implements VisibilityUtilsFragment.VisibilityUtilsCallback {
 
     private Toolbar mToolbar;
 

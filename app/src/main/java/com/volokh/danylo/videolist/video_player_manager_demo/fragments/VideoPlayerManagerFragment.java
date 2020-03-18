@@ -101,8 +101,8 @@ public class VideoPlayerManagerFragment extends Fragment implements View.OnClick
         mVideoCover2 = (ImageView)root.findViewById(R.id.video_cover_2);
         mVideoCover2.setOnClickListener(this);
 
-        Picasso.with(getActivity()).load(R.drawable.video_sample_1_pic).into(mVideoCover);
-        Picasso.with(getActivity()).load(R.drawable.video_sample_2_pic).into(mVideoCover2);
+        Picasso.get().load(R.drawable.video_sample_1_pic).into(mVideoCover);
+        Picasso.get().load(R.drawable.video_sample_2_pic).into(mVideoCover2);
         return root;
     }
 
